@@ -1,7 +1,9 @@
 ## IDEAS-ImageAnnotator
 [paper](https://spj.science.org/doi/10.34133/2022/9893639?permanently=true)
-[link](https://ideas.eecs.oregonstate.edu/)
-[![Watch the demo]()](https://www.youtube.com/watch?v=9Nu74INL5CA&feature=youtu.be)
+
+[Go to the IA](https://ideas.eecs.oregonstate.edu/)
+
+[![Watch the demo](https://i.ytimg.com/vi/9Nu74INL5CA/hqdefault.jpg)](https://www.youtube.com/watch?v=9Nu74INL5CA&feature=youtu.be)
 
 # Multi-class/multi-object Image Segments Annotator
     + This is a web application for custom multi-class/multi-object annotation. Python Flask web framework was used to receive annotation request from frond-end. 
