@@ -1,7 +1,7 @@
 ## IDEAS-ImageAnnotator
 [![Watch the demo](https://i.ytimg.com/vi/9Nu74INL5CA/hqdefault.jpg)](https://www.youtube.com/watch?v=9Nu74INL5CA&feature=youtu.be)
 
-+ [paper](https://spj.science.org/doi/10.34133/2022/9893639?permanently=true)
++ [paper @ PlantPhenomics 2022](https://spj.science.org/doi/10.34133/2022/9893639?permanently=true)
 
 + [Go to the IA](https://ideas.eecs.oregonstate.edu/)
 

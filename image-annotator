@@ -1,0 +1,20 @@
+## https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+## move this file to : /etc/apache2/sites-available
+
+<VirtualHost *:80>
+    ServerName .com
+    ServerAdmin admin@mywebsite.com
+    WSGIScriptAlias / /export/www/strauss/image-annotator/image-annotator.wsgi
+    <Directory /export/www/strauss/image-annotator/>
+        Order allow, deny
+        Allow from all
+        </Directory>
+        Alias /static /export/www/strauss/image-annotator/static
+        <Directory /export/www/strauss/image-annotator/static/>
+            Order allow, deny
+            Allow from all
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+            LogLevel warn
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
