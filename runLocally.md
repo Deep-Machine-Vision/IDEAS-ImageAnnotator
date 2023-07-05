@@ -22,10 +22,13 @@
     >>> rmdir checkpoints
     >>> cd ../../
     ```
-    + run the annotator locally
-    ```
-    >>> python grabcut.py
-    ```
+# run the annotator locally
+    - [download the model](https://oregonstate.box.com/s/qwgxpuyu9i1zelk0apntf4dttjdftjj1)
+    - config the model path in `config.py`.
+    - start running of the app locally
+        ```
+        >>> python grabcut.py
+        ```
 
 # Deployment the tool yourself.
     - server devweb.fsl.orst.edu  
