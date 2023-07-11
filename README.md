@@ -3,7 +3,7 @@
 
 + [paper @ PlantPhenomics 2022](https://spj.science.org/doi/10.34133/2022/9893639?permanently=true)
 
-+ [Go to the IA](https://ideas.eecs.oregonstate.edu/)
++ [Go to the IA: https://ideas.eecs.oregonstate.edu/](https://ideas.eecs.oregonstate.edu/)
 
 
 + [Run the tool on your local machine or server](runLocally.md)
