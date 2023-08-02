@@ -4,32 +4,36 @@
         - flask
         - waitress
         - PIL    # pillow.
-        - openCV for python # install [openCV3](http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/) or install *opencv-python* using 'pip install opencv-python'
-        - tensorflow-gpu==1.12.0
-        - cuda-9.0
         - easydict
         - scipy
         - scikit-image
         - matplotlib
         - tifffile
+        - opencv-python # or install [openCV3](http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/)
+        - tensorflow-gpu==1.12.0
+        - cuda-9.0
+        
     + download the network weights:
     ```
     >>> cd deeplab_interactive
     >>> mkdir -p sgis-itis/model
     >>> wget https://oregonstate.box.com/shared/static/b5cavab129bjvxbfmxajwzj8o5gfkij6.zip checkpoints.zip
     >>> unzip checkpoints.zip
-    >>> mv checkpoints/* ./
+    >>> mv checkpoints/* ./sgis-itis/model/
     >>> rmdir checkpoints
-    >>> cd ../../
+    >>> cd ../
     ```
+
+    + You can also [download the model](https://oregonstate.box.com/s/qwgxpuyu9i1zelk0apntf4dttjdftjj1) with browser.
+    
 # run the annotator locally
-[download the model](https://oregonstate.box.com/s/qwgxpuyu9i1zelk0apntf4dttjdftjj1) . Then, 
+
     - config the model path in `config.py`.
     - start running of the app locally
         ```
         >>> python grabcut.py
         ```
-
+        
 # Deployment the tool yourself.
     - server devweb.fsl.orst.edu  
         + path: /export/www/strauss/image-annotator
@@ -37,6 +41,8 @@
         + path: /scratch2/yuanjial/image-annotator
     - excute the GUI on the server:   
       1.update grabcut.py: app.run(debug=True) --> app.run(host='0.0.0.0', port=5000, debug=False)  
+        ``` the model is running locally at: https:localhost:5000
+        ```
       2.execute on in the background in one of below options:
         + via tmux or screen
         + nohup python grabcut.py >grabcut.log 2>grabcut.error &  
